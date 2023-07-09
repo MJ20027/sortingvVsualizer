@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="p-3 bg-dark text-white">
+
+
+    <h1 id="head" align="center"> Sorting Visualizer </h1>
+    <div id="bars" class="flex-container" ></div>
+    <nav>
+        <div class="row">
+            <div class="col" id="input">
+                <span id="size">Size
+                    <input id="RSize" type="range" min="1" max="100">
+                </span>
+                <span id="speed">Speed
+                    <input id="RSpeed" type="range" min="0" max="500">
+                </span>
+            </div>
+        </div>
+        <div id="btn" data-toggle="buttons">
+            <button id = "Create" type="button" class="btn btn-outline-success btn-dark newArray">Create Array</button>
+
+            <button type="button" class="btn btn-outline-danger mergeSort m-1" id="ms">
+                mergeSort
+            </button>
+            <button type="button" class="btn btn-outline-danger bubbleSort m-1" id="bs">
+                bubbleSort
+            </button>
+            <button type="button" class="btn btn-outline-danger insertionSort m-1" id="is">
+                insertionSort
+            </button>
+            <button type="button" class="btn btn-outline-danger quickSort m-1" id="qs">
+                quickSort
+            </button>
+            <button type="button" class="btn btn-outline-danger selectionSort m-1" id="ss">
+                selectionSort
+            </button>
+        </div>
+
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="Algorithms/merge.js"></script>
+    <script src="Algorithms/selection.js"></script>
+    <script src="Algorithms/insertion.js"></script>
+    <script src="Algorithms/sorting.js"></script>
+    <script src="Algorithms/quick.js"></script>
+    <script src="Algorithms/bubble.js"></script>
+</body>
+
+</html>
